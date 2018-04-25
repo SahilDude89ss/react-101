@@ -6,6 +6,13 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            recipes: []
+        }
+    }
+
+    // Life cycle method
+    componentWillMount() {
+        this.setState({
             recipes: [
                 {
                     title: 'Tandoori Chicken',
@@ -18,9 +25,9 @@ class App extends Component {
                 {
                     title: 'Ramen Noodles',
                     category: 'Korean'
-                },
+                }
             ]
-        }
+        })
     }
 
     render() {
