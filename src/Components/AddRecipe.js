@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import uuid from "uuid";
+import PropTypes from "prop-types";
 
+/**
+ * 
+ */
 class AddRecipe extends Component {
-    static defaultProps = {
-        categories: ['Indian', 'Italian', 'Korean']
-    };
-
     constructor(props) {
         super(props);
         this.state = {
@@ -58,6 +58,16 @@ class AddRecipe extends Component {
             </div>
         );
     }
+}
+
+
+AddRecipe.propTypes = {
+    categories: PropTypes.array,
+    addRecipe: PropTypes.func
+};
+
+AddRecipe.defaultProps = {
+    categories: ['Indian', 'Italian', 'Korean']
 }
 
 export default AddRecipe;

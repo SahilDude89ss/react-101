@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from "prop-types";
 
 /***
  *
@@ -20,5 +21,9 @@ class RecipeItem extends Component {
         );
     }
 }
+RecipeItem.propTypes = {
+    recipe: PropTypes.object,
+    onDeleteRecipe: PropTypes.func
+};
 
 export default RecipeItem;

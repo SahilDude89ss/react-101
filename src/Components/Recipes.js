@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import RecipeItem from "./RecipeItem";
 
 class Recipes extends Component {
@@ -31,5 +32,10 @@ class Recipes extends Component {
         );
     }
 }
+
+Recipes.propTypes = {
+    recipes: PropTypes.array,
+    onDelete: PropTypes.func
+};
 
 export default Recipes;
