@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import uuid from "uuid";
 
 class AddRecipe extends Component {
     static defaultProps = {
@@ -22,6 +23,7 @@ class AddRecipe extends Component {
         } else {
             this.setState({
                 newRecipe: {
+                    id: uuid.v4(),
                     title: this.refs.title.value,
                     category: this.refs.category.value,
                 }
