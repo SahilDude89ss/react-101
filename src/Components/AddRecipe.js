@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import uuid from "uuid";
+import SuccessButton from './Buttons/SuccessButton'
 import PropTypes from "prop-types";
 
 /**
@@ -53,7 +54,7 @@ class AddRecipe extends Component {
                         </select>
                     </div>
                     <br/>
-                    <button>Submit</button>
+                    <SuccessButton label={`Submit Recipe`} />
                 </form>
             </div>
         );
