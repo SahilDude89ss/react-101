@@ -15,7 +15,7 @@ class Recipes extends Component {
 
         return (
             <div className="Recipes">
-                My Recipes
+                <h4>My Recipes</h4>
                 <ul>
                     {recipeItems}
                 </ul>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Recipes from './Components/Recipes';
+import AddRecipe from './Components/AddRecipe';
 import './App.css';
 
 class App extends Component {
@@ -30,10 +31,18 @@ class App extends Component {
         })
     }
 
+    handleAddNewRecipe(newRecipe) {
+        let recipes = this.state.recipes;
+        recipes.push(newRecipe);
+
+        this.setState({recipes})
+    }
+
     render() {
         return (
             <div className="App">
                 <h1>My App</h1>
+                <AddRecipe addRecipe={this.handleAddNewRecipe.bind(this)}/>
                 <Recipes recipes={this.state.recipes}/>
             </div>
         );
