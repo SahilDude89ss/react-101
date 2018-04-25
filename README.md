@@ -16,5 +16,8 @@ Presentation Slides: https://swipe.to/2447gr
 # Tag step4 
 - Introduced lifecycle events
 
+# Tag ste5
+- Introduced stateless components.
+
 # master branch 
 - Loading posts from an external URL and rendering them on the page.
