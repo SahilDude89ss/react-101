@@ -3,7 +3,7 @@ import uuid from "uuid";
 import PropTypes from "prop-types";
 
 /**
- * 
+ *
  */
 class AddRecipe extends Component {
     constructor(props) {
